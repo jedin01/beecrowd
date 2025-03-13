@@ -1,13 +1,13 @@
 package org.example
 
 import java.lang.reflect.Array
+import kotlin.math.pow
 
 class EveryChall {
 
     fun print():Unit{
         print("Hello, Wolrd!")
     }
-
     fun sum():Unit{
         val a: Int = readln().toInt()
         val b: Int = readln().toInt()
@@ -44,5 +44,11 @@ class EveryChall {
                 println(result.toString())
             }
         }
+    }
+    fun calcArea(){
+        var r:Double  = readln().toDouble()
+        val a:Double = Math.PI*(r.pow(2))
+        println(String.format("A=%.4f", a))
+
     }
 }
